@@ -17,13 +17,12 @@
     >
   </head>
   <body>
-    <h1>HTML Form</h1>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
-      <div>
-        <p>Personal information</p>
+      <fieldset>
+        <legend>Personal information</legend>
         <label>
           Surname:
           <input
@@ -69,14 +68,15 @@
             required
           >
         </label>
-      </div>
-      <div>
-        <p>Registration</p>
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
         <label>
           E-mail:
           <input
             type="email"
             name="email"
+            autocomplete="off"
             placeholder="email@example.com"
             required
           >
@@ -91,9 +91,9 @@
             required
           >
         </label>
-      </div>
-      <div>
-        <p>An interesting facts about you!</p>
+      </fieldset>
+      <fieldset>
+        <legend>An interesting facts about you!</legend>
         Do you love cats?
         <label class="radio-label">
           <input
@@ -146,9 +146,9 @@
             value="0"
           >
         </label>
-      </div>
-      <div>
-        <p>Additional info:</p>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info:</legend>
         <label>
           Comments:
           <textarea
@@ -168,7 +168,7 @@
             <option value="no">no</option>
           </select>
         </label>
-      </div>
+      </fieldset>
       <button type="submit">Submit</button>
     </form>
 
